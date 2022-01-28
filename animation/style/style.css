@@ -1,0 +1,41 @@
+@font-face {
+  font-family: cyber;
+  src: url(/cyberway-riders-font/CyberwayRiders-lg97d.ttf);
+}
+html{
+  min-height: 100%;
+  overflow: hidden;
+  
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(251, 255, 0, 0.75);
+  font-family: cyber; 
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 40em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 200%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 6s steps(44) 2s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
